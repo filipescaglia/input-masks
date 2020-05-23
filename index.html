@@ -22,13 +22,14 @@
     <button onclick="alert(formatDate(document.querySelector('#user-date3').value, 'database'))">DB Format</button>
 
     <h6>CPF/CNPJ:</h6>
-    <input class="doc" type="text" onclick="preventLetterDoc('.doc')" onkeyup="cpfCnpjMask(this)" maxlength="18" placeholder="xxx.xxx.xxx-xx">
+    <input class="doc" type="text" onclick="preventLetterDoc('.doc')" onkeyup="cpfCnpjMask(this)" maxlength="14" placeholder="xxx.xxx.xxx-xx">
     <input class="doc2" type="text" onclick="preventLetterDoc('.doc2')" onkeyup="cpfCnpjMask(this)" maxlength="18" placeholder="xx.xxx.xxx/xxxx-xx">
 
     <h6>Phone:</h6>
-    <input class="phone" type="text" onclick="preventLetterPhone('.phone')" onkeyup="phoneMask(this)" maxlength="15" placeholder="(xx) xxxx-xxxx">
+    <input class="phone" type="text" onkeyup="phoneMask(this)" maxlength="14" placeholder="(xx) xxxx-xxxx">
     <input class="phone2" type="text" onclick="preventLetterPhone('.phone2')" onkeyup="phoneMask(this)" maxlength="15" placeholder="(xx) xxxxx-xxxx">
 
-    <script src="date_formatter.js"></script>
+    <script src="utils.js"></script>
+    <script src="masks.js"></script>
 </body>
 </html>
