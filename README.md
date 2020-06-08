@@ -3,13 +3,16 @@
 ## Changelog
 ### v1.0:
 - Masks:
-  - Date, phone and CPF/CNPJ
-- Conversion of dates and validator
+  - Date, phone and CPF/CNPJ.
+- Conversion of dates and validator.
 ### v1.1:
 - Splitted 'date_formatter' file in two:
   - masks.js which contains only the masks functions.
   - utils.js which contains some useful functions as validators.
 - Many changes to the README.
+### v1.1.1:
+- Mask:
+  - DateTime.
 
 Feel free to use.
 

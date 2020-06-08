@@ -50,6 +50,19 @@ function dateMask(input) {
     input.value = date;
 }
 
+function dateTimeMask(input) {
+    date = input.value;
+    date = date.replace(/\D/g, "");
+    date = date.replace(/^(\d{2})(\d{2})/,"$1/$2");
+    date = date.replace(/^(\d{2})\.(\d{2})(\d)/,"$1.$2.$3");
+    date = date.replace(/\.(\d{2})(\d)/,".$1/$2");
+    date = date.replace(/(\d{2})(\d)/,"$1/$2");
+    date = date.replace(/(\d{4})(\d)/, "$1 $2");
+    date = date.replace(/(\d{4}) (\d{2})(\d)/, "$1 $2:$3");
+    date = date.replace(/(\d{4}) (\d{2}):(\d{2})(\d)/, "$1 $2:$3:$4");
+    input.value = date;
+}
+
 function cpfCnpjMask(input){
     number = input.value;
 	if(number.length < 15){

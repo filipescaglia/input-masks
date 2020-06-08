@@ -9,6 +9,9 @@
     <h6>Date:</h6>
     <input type="text" onkeyup="dateMask(this)" maxlength="10" placeholder="xx/xx/xxxx">
 
+    <h6>DateTime:</h6>
+    <input type="text" onkeyup="dateTimeMask(this)" maxlength="19" placeholder="xx/xx/xxxx xx:xx:xx">
+
     <h6>Format date:</h6>
     <input id="user-date" type="text" value="14/05/2020" maxlength="10" disabled>
     <button onclick="alert(formatDate(document.querySelector('#user-date').value, 'database'))">DB Format</button>
